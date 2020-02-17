@@ -1,4 +1,4 @@
-# Script para manipulação de dados e Criação de Dataframes#
+# Script para manipulação de dados e Criação de Dataframes
 # Avaliação do curso Projetos de análise de dados em R
 # dados originais extraídos do primeiro capitulo de minha dissertação
 # primeira versão em 2020-02-15
