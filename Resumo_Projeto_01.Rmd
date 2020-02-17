@@ -1,0 +1,37 @@
+---
+title: "Resumo Projeto"
+author: "RenonAndrade"
+date: "17/02/2020"
+output: html_document
+bibliography: Citation/AVA.bib
+csl: Citation/ecology.csl
+---
+
+<style>
+body {
+text-align: justify}
+</style>
+
+
+### Introdução
+
+Este é um documento referente a avaliação da disciplina de "Tópicos Especiais - Projetos de análise de dados usando R." realizado pela Escola Nacional de Botânica Tropical ENBT / Instituto de Pesquisas Jardim Botânico do Rio de Janeiro JBRJ, ministrada pela Drª Andrea Sánchez Tapia e Drª Sara Mortara.  
+
+### Objetivos Gerais do Projeto
+
+Atualmente curso o Mestrado acadêmico pelo JBRJ com o seguinte tema "Interações Planta-Polinizador e Atributos Funcionais das
+Angiospermas Ameaçadas de Extinção do Brasil". Embora possa parecer um pouco distante do tema principal do trabalho, especificamente para o primeiro módulo, propomos realizar um diagnóstico das produções científicas para as angiospermas ameaçadas de extinção no Brasil, portanto, todo o conteúdo do repositório será referente a esse primeiro módulo. 
+
+### Contexto e Pergunta norteadora
+
+Uma das abordagens para orientar a alocação de recursos financeiros é o sistema de classificação das “Listas Vermelhas de Espécies Ameaçadas™” (LVEA) utilizado pela “International Union for Conservation of Nature” (IUCN). Através de sua metodologia as LVEA têm ajudado a focar as prioridades para recursos de conservação do ponto de vista geográfico ou taxonômico [@rodrigues_value_2006]. Estes recursos incluem esforços nas pesquisas cientificas destinadas a aumentar o conhecimento sobre o estado atual e as perspectivas futuras das espécies [@possingham_limits_2002; @butchart_biodiversity_2006]. No entanto, mesmo atribuindo as Listas Vermelhas um efetivo direcionamento de recursos de conservação para alguns grupos taxonômicos, as informações ainda são limitadas sobre a existência de um efeito de listagem, ou seja, uma mudança no esforço das pesquisas cientificas para as espécies listadas, principalmente para grupo de plantas.
+
+Diante deste cenário, o objetivo do trabalho é identificar e explorar o efeito da publicação do Livro Vermelho da Flora do Brasil (LVFBr) em relação ao esforço científico para as angiospermas ameaçadas de extinção.
+
+### Resumo do Materiais e Métodos
+
+Nomes latinizados (incluindo sinônimos) de todas as 1998 espécies de angiospermas classificadas como ameaçadas foram retiradas do LVFBr, adicionalmente, através da base de dados do "Centro Nacional de Conservação da Flora" [(CNCFLORA)](http://www.cncflora.jbrj.gov.br/portal) foi contruida uma lista com 493 angiospermas classificadas como "Deficiente de Dados" e outra lista com 1472 angiospermas classificadas como "Menos Preocupante",essa ultima foi considerada grupo controle. Para verificar o esforço cientifico, foram realizadas buscas na base de dados [Google Scholar ®](https://scholar.google.com/) para cada espécie entre os periodos (2006-2012) e (2013-2019) totalizando um intervalo de 14 anos.
+
+Para testar a presença do efeito de listagem nós utilizamos um modelo de “Bayesian structural time-series” que estima o efeito causal projetado dentro de uma série temporal para o grupo tratado, este modelo é encotrado no pacote "Causal Impact Version: 1.2.4" [@brodersen_inferring_2015], todas as análises foram realizadas pelo softaware R Core Team [-@R_citation].
+
+## Referencias Bibliográficas 
